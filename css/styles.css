@@ -13,6 +13,7 @@
 }
 
 body {
+  width: 1600px;
   background-color: var(--primary-background-color);
   color: var(--primary-color-text);
 
@@ -20,12 +21,37 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* list */
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  outline: 2px solid #000000;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
 }
 
 /* Header */
+.page-header {
+  background-color: tomato;
+}
+
 .header-nav .link {
   color: var(--secondary-color-text);
   text-decoration: none;
@@ -76,11 +102,19 @@ body {
 }
 
 /* footer */
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .page-footer {
   background-color: #2f303a;
 }
 
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
   color: var(--white-color);
   text-decoration: none;
 
@@ -104,6 +138,8 @@ body {
 }
 
 .address {
+  margin-bottom: 9px;
+
   color: var(--white-color);
 
   font-style: normal;
@@ -111,25 +147,38 @@ body {
   line-height: 1.71;
 }
 
+.footer .link {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
 /* hero */
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
-  color: var(--white-color);
+  margin-bottom: 30px;
+  background-color: yellowgreen;
 
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+
   color: var(--white-color);
   background-color: var(--accent);
+  border: 1px solid transparent;
   cursor: pointer;
 
   font-family: inherit;
@@ -139,8 +188,18 @@ body {
   letter-spacing: 0.06em;
 }
 
+.container.hero-cont {
+  margin-bottom: 94px;
+}
+
 /* Features */
+.features {
+  background-color: tomato;
+}
+
 .features-title {
+  margin-bottom: 10px;
+
   color: var(--secondary-color-text);
 
   font-size: 14px;
@@ -153,8 +212,22 @@ body {
   line-height: 1.71;
 }
 
+.container.our-features {
+  margin-bottom: 94px;
+}
+
 /* What are we doing */
+.doing {
+  background-color: tomato;
+}
+
+.container.we-doing {
+  margin-bottom: 94px;
+}
+
 .working-direction {
+  margin-bottom: 50px;
+
   color: var(--secondary-color-text);
 
   font-size: 36px;
@@ -165,9 +238,17 @@ body {
 /* Team */
 .our-team {
   background-color: var(--secondary-background-color);
+  background-color: tomato;
 }
 
-.team {
+.container.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+
   color: var(--secondary-color-text);
 
   font-size: 36px;
@@ -176,11 +257,17 @@ body {
 }
 
 .team-name {
+  margin-bottom: 10px;
+
   color: var(--secondary-color-text);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+}
+
+.team-foto {
+  margin-bottom: 30px;
 }
 
 .team-speciality {
