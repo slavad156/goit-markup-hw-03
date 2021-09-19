@@ -56,6 +56,11 @@ p {
   padding-bottom: 0;
 }
 
+.invisible {
+  color: transparent;
+  font-size: 0;
+}
+
 /* Header */
 .header,
 .site-nav {
@@ -229,6 +234,12 @@ p {
   letter-spacing: 0.06em;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--white-color);
+  background-color: #188ce8;
+}
+
 /* Features */
 .features-display {
   display: flex;
@@ -256,6 +267,11 @@ p {
 
 /* What are we doing */
 
+.we-doing {
+  display: flex;
+  justify-content: space-between;
+}
+
 .working-direction {
   margin-bottom: 50px;
 
@@ -267,6 +283,11 @@ p {
 }
 
 /* Team */
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
 .our-team {
   background-color: var(--secondary-background-color);
 }
@@ -289,6 +310,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 
 .team-foto {
@@ -298,9 +320,19 @@ p {
 .team-speciality {
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 
 /* page portfolio */
+.buttons-portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-portfolio .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .buttons-portfolio .filter {
   padding: 6px 22px;
   border: 1px solid transparent;
@@ -323,6 +355,8 @@ p {
 
   background-color: var(--accent);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons-portfolio {
