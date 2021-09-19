@@ -41,7 +41,7 @@ p {
 
 .container {
   width: 1200px;
-  outline: 2px solid #000000;
+  /* outline: 2px solid #000000; */
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -262,6 +262,10 @@ p {
 
 /* page portfolio */
 .buttons-portfolio .filter {
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
   background-color: var(--secondary-background-color);
   color: var(--secondary-color-text);
   cursor: pointer;
@@ -275,8 +279,14 @@ p {
 
 .buttons-portfolio .filter:hover,
 .buttons-portfolio .filter:focus {
+  border: 1px solid transparent;
+
   background-color: var(--accent);
   color: var(--white-color);
+}
+
+.buttons-portfolio {
+  margin-bottom: 50px;
 }
 
 .products-title {
@@ -290,4 +300,8 @@ p {
 .products-type {
   font-size: 16px;
   line-height: 1.87;
+}
+
+.products-foto {
+  margin-bottom: 20px;
 }
