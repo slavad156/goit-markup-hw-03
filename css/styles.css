@@ -155,13 +155,10 @@ img {
 }
 
 /* footer */
-.container.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .page-footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -208,6 +205,8 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
